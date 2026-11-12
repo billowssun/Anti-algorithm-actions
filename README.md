@@ -1,16 +1,33 @@
-# React + Vite
+# 反信息茧房计划
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+介绍信息茧房与个性化推荐机制的科普网站，按应用分类整理关闭推荐的操作路径。
 
-Currently, two official plugins are available:
+## 页面内容
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 信息茧房与推荐算法的科普说明。
+- 社交、购物和其他应用的分类筛选。
+- 常见 App 关闭个性化推荐的操作指引。
+- 适配桌面和手机的页面导航。
 
-## React Compiler
+页面展示操作指南，不会直接修改其他 App 的设置。各 App 设置入口可能随版本变化，使用时需自行核对。
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 技术栈
 
-## Expanding the ESLint configuration
+React、Vite、Tailwind CSS 与 Lucide 图标，无独立业务后端。
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 本地开发
+
+```bash
+npm ci
+npm run dev
+```
+
+## 检查与构建
+
+```bash
+npm run lint
+npm run build
+npm run preview
+```
+
+构建产物在 `dist/`，可发布到静态托管服务。主要内容与 App 操作路径位于 `src/App.jsx`。
